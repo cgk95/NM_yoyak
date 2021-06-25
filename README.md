@@ -31,11 +31,13 @@ def expand_contractions():
  
 ```
 * Rouge Score
-| Contents |baseline | myModel |  States Of Art  |  Progress   |
+| Contents | March | April |  May  | June  |   Progress   |
 |----------|-------|-------|-------|-------|--------------|
-|  Rouge-1 |    0    |    0    |           |  Link1       |
-|  Rouge-2 |  0      |   0     |           |    Link2     |
-|  Rouge-L |         |   0     |    0      |     Link3    |
+|Baseline study|    0   |    0   |       |       |     Link1    |
+|  데이터셋 수집  |  0     |   0    |       |       |     Link2    |
+|  모델 설계  |       |   0    |    0   |       |     Link3    |
+|  중간보고서제출  |       |       |    0   |       |     Link4    |
+| 최종보고서제출 |       |      |       |     0  |     Link5    |
 
 
 * Web link
