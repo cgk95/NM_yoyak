@@ -15,8 +15,13 @@
 * 16주차 - 최종발표.
 
 ## 과제 수행 방법
-* 데이터 
-* 
+* 데이터 수집 및 전처리
+- CNN/DailMail Dataset 을 사용->inshorts news dataset 으로 변경 (너무 긴 입력텐서 문제 발생)
+* 훈련 시퀀스 준비
+* 딥러닝 모델 작성
+* 모델 평가
+* 추가 과제 제안
+
 ## Schedule
 | Contents | March | April |  May  | June  |   Progress   |
 |----------|-------|-------|-------|-------|--------------|
