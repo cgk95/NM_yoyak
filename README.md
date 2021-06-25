@@ -49,7 +49,11 @@ class MultiHeadAttention():
  
 ```
 ## Rouge Score
-
+| Contents | baseline | myModel |  States of art  |
+|----------|----------|---------|-----------------|
+|  Rouge-1 |          |         |                 |
+|  Rouge-2 |          |         |                 | 
+|  Rouge-L |          |         |                 | 
 
 ## 수행 예시
 
