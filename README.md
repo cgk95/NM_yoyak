@@ -43,7 +43,7 @@ def dot_product_attention():
  
 ```
 ``` python3
-def MultiHeadAttention():
+class MultiHeadAttention():
  
 ```
 ## Rouge Score
