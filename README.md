@@ -25,11 +25,19 @@
 | 최종보고서제출 |       |      |       |     0  |     Link5    |
 
 ## Results
-* 텍스트 전처리에 사용한 코드
+* 주요 코드
 ``` python3
 def expand_contractions():
  
 ```
+* Rouge Score
+| Contents |baseline | myModel |  States Of Art  |  Progress   |
+|----------|-------|-------|-------|-------|--------------|
+|  Rouge-1 |    0    |    0    |           |  Link1       |
+|  Rouge-2 |  0      |   0     |           |    Link2     |
+|  Rouge-L |         |   0     |    0      |     Link3    |
+
+
 * Web link
 
 
