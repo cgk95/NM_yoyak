@@ -14,7 +14,9 @@
 * 15주차 - 작은 길이의 문장 데이터셋으로 축소(kaggle inshorts news data), Rouge metric을 사용한 평가 적용.
 * 16주차 - 최종발표.
 
-
+## 과제 수행 방법
+* 데이터 
+**
 ## Schedule
 | Contents | March | April |  May  | June  |   Progress   |
 |----------|-------|-------|-------|-------|--------------|
