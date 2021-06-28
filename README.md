@@ -43,7 +43,11 @@
 * 
 > 모델 평가
 > > Rouge metrics
-* rouge score는
+* Rouge Score에서 Recall은 참조 요약본을 구성하는 단어 중 몇 개의 단어가 시스템 요약본의 단어들과 겹치는지를 보는 점수입니다.
+* Rouge Score에서 Precision은 Recall과는 반대로 모델이 생성한 시스템 요약본 중 참조 요약본과 겹치는 단어들이 얼마나 많이 있는지를 보는 지표입니다.
+* Recall과 Precision을 가지고 F1 score를 계산하여 최종적으로 Rouge Score를 구합니다.
+* ROUGE-N: unigram, bigram, trigram 등 문장 간 중복되는 n-gram을 비교하는 지표입니다.
+* ROUGE-L: LCS 기법을 이용해 최장 길이로 매칭되는 문자열을 측정합니다. 
 
 > 추가 과제 제안
 * 영어보다 한국어를 처리하는 것이 어려우므로, 한국어 데이터셋에 대하여 요약모델을 설계해보고 싶습니다.
