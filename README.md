@@ -186,6 +186,6 @@ class MultiHeadAttention(tf.keras.layers.Layer):
 
 ## ToDo
 * 장문의 텍스트를 그보다 작은 길이로 잘라서 각개 요약을 하고 다시 합쳐서 정답요약문과 같은지 확인하기
-* Rouge metric의 맹점-정답요약문과 다른 단어들을 사용하여 훌륭한 요약을 하였을 때 rouge 점수가 0정이 나오는 문제- 를 \n
-해결할 방법 제시하기. 
-* 한국어 문서도 요약해보기
+* Rouge metric의 맹점-정답요약문과 다른 단어들을 사용하여 훌륭한 요약을 하였음에도 불구하고 그 결과로는 rouge 점수가 0점이 나오는 문제- 를 \n
+해결할 방법 제시하기.  ->> (https://github.com/cgk95/abv_rouge)
+* 한국어 문서도 요약해보기 ->> (https://github.com/cgk95/korabs_tudy)
