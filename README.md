@@ -18,10 +18,23 @@
 > 데이터 수집 및 전처리
 > > 축약문 펼치기
 * 아포스트로피 등으로 축약된 단어들을 길게 펼쳐주어야 합니다. 해당 작업을 진행 하지 않을 경우, 축약문들이 모두 unknown 토큰으로 처리될 확률이 높기 때문에 요약성능을 하락시키게 됩니다.
+* contraction 라이브러리를 이용하여 함수를 구현하였습니다.
+![image](https://user-images.githubusercontent.com/73059667/123746489-acec9780-d8ec-11eb-985d-6c090eac96fe.png)
+![image](https://user-images.githubusercontent.com/73059667/123746550-c392ee80-d8ec-11eb-979e-1d3effcb5e4b.png)
+![image](https://user-images.githubusercontent.com/73059667/123746572-c8f03900-d8ec-11eb-9f45-b2d53338441e.png)
+
+
 > > 불용어 처리
 * 중요도가 떨어지거나 실제로는 쓰이지 않는 단어들을 삭제하거나 변경하여 줍니다. 문장의 의미를 유지하며 컴퓨터의 연산량을 줄이기 위한 작업입니다.
+* nltk의 stopword 라이브러리를 사용하여 구현하였습니다.
+
+
 > > 표제어 추출
 * 단어의 본디 의미를 살리며 동시에 연산량을 줄이기 위해서 표제어 추출을 수행합니다. 표제어추출은 어간추출과는 다르게 단어들이 다른 형태를 가지더라도 그 뿌리를 찾아가 훈련과정에서 사용할 단어의 수를 줄여주는 역할을 합니다.
+* 마찬가지로 
+
+![image](https://user-images.githubusercontent.com/73059667/123746628-dad1dc00-d8ec-11eb-95ee-4c08c399e99c.png)
+
 
 
 > 훈련 시퀀스 준비
@@ -40,14 +53,23 @@
 * attention mechanism의 기본 아이디어는 디코더에서 출력 단어를 예측하는 매 시점마다, 인코더에서의 전체 입력 문장을 다시 한 번 참고하자는 것입니다.
 * Attention(Q, K, V) = Attention Value
 * 주어진 Query에 대해서 모든 Key와의 유사도를 각각 구합니다. 이후 이 유사도를 키와 맵핑되어있는 각각의 Value에 반영해줍니다. 그리고 유사도가 반영된 Value들을 모두 더해서 리턴하는데 이 리턴값이 Attention Value 가 됩니다.
-* 
+
+![image](https://user-images.githubusercontent.com/73059667/123746759-081e8a00-d8ed-11eb-85e4-935284fb0ea6.png)
+
+
 > 모델 평가
+
+![image](https://user-images.githubusercontent.com/73059667/123746856-297f7600-d8ed-11eb-9cf4-324b934bb169.png)
+
 > > Rouge metrics
+
 * Rouge Score에서 Recall은 참조 요약본을 구성하는 단어 중 몇 개의 단어가 시스템 요약본의 단어들과 겹치는지를 보는 점수입니다.
 * Rouge Score에서 Precision은 Recall과는 반대로 모델이 생성한 시스템 요약본 중 참조 요약본과 겹치는 단어들이 얼마나 많이 있는지를 보는 지표입니다.
 * Recall과 Precision을 가지고 F1 score를 계산하여 최종적으로 Rouge Score를 구합니다.
 * ROUGE-N: unigram, bigram, trigram 등 문장 간 중복되는 n-gram을 비교하는 지표입니다.
 * ROUGE-L: LCS 기법을 이용해 최장 길이로 매칭되는 문자열을 측정합니다. 
+
+![image](https://user-images.githubusercontent.com/73059667/123746957-4320bd80-d8ed-11eb-9bc9-a54c8231cccb.png)
 
 > 추가 과제 제안
 * 영어보다 한국어를 처리하는 것이 어려우므로, 한국어 데이터셋에 대하여 요약모델을 설계해보고 싶습니다.
