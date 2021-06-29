@@ -19,6 +19,7 @@
 > > 축약문 펼치기
 * 아포스트로피 등으로 축약된 단어들을 길게 펼쳐주어야 합니다. 해당 작업을 진행 하지 않을 경우, 축약문들이 모두 unknown 토큰으로 처리될 확률이 높기 때문에 요약성능을 하락시키게 됩니다.
 * contraction 라이브러리를 이용하여 함수를 구현하였습니다.
+
 ![image](https://user-images.githubusercontent.com/73059667/123746489-acec9780-d8ec-11eb-985d-6c090eac96fe.png)
 ![image](https://user-images.githubusercontent.com/73059667/123746550-c392ee80-d8ec-11eb-979e-1d3effcb5e4b.png)
 ![image](https://user-images.githubusercontent.com/73059667/123746572-c8f03900-d8ec-11eb-9f45-b2d53338441e.png)
